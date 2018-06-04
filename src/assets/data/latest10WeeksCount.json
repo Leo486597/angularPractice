@@ -1,0 +1,52 @@
+[
+    {
+        "Label": "03-Dec-2017",
+        "Raised": 2,
+        "Cleared": 1
+    },
+    {
+        "Label": "10-Dec-2017",
+        "Raised": 2,
+        "Cleared": 3
+    },
+    {
+        "Label": "17-Dec-2017",
+        "Raised": 4,
+        "Cleared": 3
+    },
+    {
+        "Label": "24-Dec-2017",
+        "Raised": 4,
+        "Cleared": 5
+    },
+    {
+        "Label": "31-Dec-2017",
+        "Raised": 3,
+        "Cleared": 3
+    },
+    {
+        "Label": "07-Jan-2018",
+        "Raised": 2,
+        "Cleared": 2
+    },
+    {
+        "Label": "14-Jan-2018",
+        "Raised": 3,
+        "Cleared": 3
+    },
+    {
+        "Label": "21-Jan-2018",
+        "Raised": 3,
+        "Cleared": 1
+    },
+    {
+        "Label": "28-Jan-2018",
+        "Raised": 4,
+        "Cleared": 6
+    },
+    {
+        "Label": "04-Feb-2018",
+        "Raised": 2,
+        "Cleared": 2
+    }
+]

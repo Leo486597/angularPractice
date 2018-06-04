@@ -1,0 +1,44 @@
+[
+    {
+        "Label": "Team Charlie",
+        "PercentageDone": 9.0909090909090917,
+        "Done": 1.0,
+        "Total": 11.0
+    },
+    {
+        "Label": "Team Alpha",
+        "PercentageDone": 5.9459459459459465,
+        "Done": 11.0,
+        "Total": 185.0
+    },
+    {
+        "Label": "Team Beta",
+        "PercentageDone": 2.083333333333333,
+        "Done": 1.0,
+        "Total": 48.0
+    },
+    {
+        "Label": "Team Delta",
+        "PercentageDone": 0.0,
+        "Done": 0.0,
+        "Total": 7.0
+    },
+    {
+        "Label": "Team Echo",
+        "PercentageDone": 0.0,
+        "Done": 0.0,
+        "Total": 7.0
+    },
+    {
+        "Label": "Team Foxtrot",
+        "PercentageDone": 0.0,
+        "Done": 0.0,
+        "Total": 7.0
+    },
+    {
+        "Label": "Team Golf",
+        "PercentageDone": 0.0,
+        "Done": 0.0,
+        "Total": 7.0
+    }
+]

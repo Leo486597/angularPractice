@@ -1,0 +1,144 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$md-primary: (
+  50 : #e1e2e7,
+  100 : #b4b7c4,
+  200 : #82889c,
+  300 : #505874,
+  400 : #2b3457,
+  500 : #051039,
+  600 : #040e33,
+  700 : #040c2c,
+  800 : #030924,
+  900 : #010517,
+  A100 : #5767ff,
+  A200 : #2439ff,
+  A400 : #0018f0,
+  A700 : #0015d6,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #ffffff,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #ffffff,
+      A200 : #ffffff,
+      A400 : #ffffff,
+      A700 : #ffffff,
+    )
+);
+
+$md-accent: (
+  50 : #e0f2fa,
+  100 : #b3dff3,
+  200 : #80caec,
+  300 : #4db4e4,
+  400 : #26a4de,
+  500 : #0094d8,
+  600 : #008cd4,
+  700 : #0081ce,
+  800 : #0077c8,
+  900 : #0065bf,
+  A100 : #e7f2ff,
+  A200 : #b4d7ff,
+  A400 : #81bcff,
+  A700 : #68aeff,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
+// mandatory stuff for theming
+$primary: mat-palette($md-primary);
+$accent:  mat-palette($md-accent);
+
+// include the custom theme components into a theme object
+$theme: mat-dark-theme($primary, $accent);
+
+$primary-dark: darken( map-get($md-primary, 500), 8% );
+
+// include the custom theme object into the angular material theme
+.dark-indigo {
+    @include angular-material-theme($theme);
+
+    .mat-bg-primary,
+    .fileupload-drop-zone.dz-file-over,
+    .topbar {
+        background: map-get($md-primary, 500) !important;
+        color: #ffffff !important;
+    }
+    .mat-color-primary,
+    .sidebar-panel.mat-sidenav .sidebar-list-item.open mat-icon:not(.menu-caret),
+    .sidebar-panel.mat-sidenav .sidebar-list-item.open > .mat-list-item-content > a > span,
+    .sidebar-panel.mat-sidenav .sidebar-list-item.open .sub-menu .mat-list-item.selected a {
+        color: map-get($md-accent, 500) !important;
+    }
+    .sidebar-panel.mat-sidenav .sidebar-list-item.open > .mat-list-item-content > a > span,
+    .sidebar-panel.mat-sidenav .sidebar-list-item.open .sub-menu .mat-list-item.selected a {
+        font-weight: 500;
+    }
+    .sidebar-panel.mat-sidenav .sidebar-list-item.open > .mat-list-item-content > .sub-menu,
+    .sidebar-panel.mat-sidenav .sidebar-list-item.open mat-icon:not(.menu-caret) {
+        border-color: map-get($md-accent, 500) !important;
+    }
+    .sidebar-panel.mat-sidenav .sidebar-list-item.open > .mat-list-item-content {
+      background: rgba(255, 255, 255, .03);
+    }
+    .sidebar-panel.mat-sidenav .mat-list-item.selected {
+      background: rgba(255, 255, 255, .05);
+    }
+    .sidebar-panel.mat-sidenav {
+        background: url('../images/sidebar-bg-dark.jpg') no-repeat;
+    }
+    .app-user .app-user-name,
+    .sidebar-panel.mat-sidenav .sidebar-list-item mat-icon:not(.menu-caret) {
+        color: white !important;
+    }
+    .text-muted {
+        color: rgba(255, 255, 255, .54) !important;
+    }
+
+    .sidebar-panel.mat-sidenav .navigation-hold,
+    .bg-white,
+    &.collapsed-menu .sidebar-panel .sidebar-list-item.open .sub-menu {
+        background: rgba(66, 66, 66, 0.92) !important;
+    }
+
+    .no-table-result {
+      background-color: rgb(66, 66, 66);
+    }
+
+    .mat-bg-accent {
+        background-color: map-get($md-accent, 500);
+        color: black;
+    }
+    .mat-bg-warn {
+        background-color: #f44336;
+        color: white;
+    }
+    .mat-color-accent {
+        color: map-get($md-accent, 500);
+    }
+    .mat-color-warn {
+        color: #f44336;
+    }
+}

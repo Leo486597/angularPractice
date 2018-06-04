@@ -1,0 +1,50 @@
+[
+    {
+        "Label": "Team Alpha",
+        "Done": 18,
+        "Discrepancy": 2,
+        "Pending": 0
+    },
+    {
+        "Label": "Team Beta",
+        "Done": 17,
+        "Discrepancy": 1,
+        "Pending": 2
+    },
+    {
+        "Label": "Team Charlie",
+        "Done": 20,
+        "Discrepancy": 1,
+        "Pending": 1
+    },
+    {
+        "Label": "Team Delta",
+        "Done": 21,
+        "Discrepancy": 0,
+        "Pending": 0
+    },
+    {
+        "Label": "Team Echo",
+        "Done": 18,
+        "Discrepancy": 1,
+        "Pending": 0
+    },
+    {
+        "Label": "Team Foxtrot",
+        "Done": 23,
+        "Discrepancy": 0,
+        "Pending": 0
+    },
+    {
+        "Label": "Team Golf",
+        "Done": 18,
+        "Discrepancy": 0,
+        "Pending": 2
+    },
+    {
+        "Label": "Total",
+        "Done": 135,
+        "Discrepancy": 5,
+        "Pending": 5
+    }
+]
